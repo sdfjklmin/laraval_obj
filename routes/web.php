@@ -10,15 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 #  
-   ＿＿＿乌吉`
-   ＿＿＿溅混`
-   ＿＿＿羞裸`
-   ＿＿＿种菜`
-   ＿＿＿复黑`
-   ＿＿＿南枪`
-   ＿＿＿淡妖`
 
 */
+ /*默认首页*/
 // Route::get('/', function () {
 //     return view('welcome');
 // });
