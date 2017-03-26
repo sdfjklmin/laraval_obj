@@ -47,4 +47,8 @@ class ArticleController extends Controller
 	{
 		  return view('admin/article/create')->withArticles(Article::find($id));
 	}
+	public function getFind($value='3')
+	{
+		return Article::find($value) ;
+	}
 }

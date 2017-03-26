@@ -19,6 +19,14 @@ class BaseController extends Controller
   
     public function index()
     {
-        return view('base')->withMenus(\Admin\Menu::all()) ;
+        // return view('base')->withMenus(Admin\Menu::all()) ;
+
+        $article = new Admin\ArticleController;
+
+         // $data = DB::table('articles')->where('id',16)->first();
+        $info = $article->getFind();
+        var_dump($info) ;
+        exit();
+        return view('base')->withMenus(Admin\ArticleController::all()); ;
     }
 }
