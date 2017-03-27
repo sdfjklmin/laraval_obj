@@ -16,11 +16,8 @@ class BaseController extends Controller
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
+  /*base
+  */
     public function index()
     {
         return view('base');
