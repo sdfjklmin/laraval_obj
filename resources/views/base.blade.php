@@ -686,6 +686,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			 <!--body wrapper end-->
 		</div>
+ 		@foreach ($Menu as $Menu)
+            <li style="margin: 50px 0;">
+                <div class="title">
+                    <a href="{{ url('article/'.$article->id) }}">
+                        <h4>{{ $Menu->name }}</h4>
+                    </a>
+                </div>
+                <div class="body">
+                    <p>{{ $Menu->level }}</p>
+                </div>
+            </li>
+            @endforeach
+
+
         <!--footer section start-->
 			<footer>
 			   <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
