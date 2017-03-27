@@ -16,11 +16,9 @@ class BaseController extends Controller
         $this->middleware('auth');
     }
 
-  /*base
-  */
+  
     public function index()
     {
         return view('base');
-         // return view('home')->withArticles(\App\Article::all());
     }
 }

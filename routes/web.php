@@ -23,6 +23,7 @@
 Auth::routes();
 /*默认页面*/
 Route::get('/', 'BaseController@index');
+Route::get('/home', 'HomeController@index');
 /*对应模块组*/
 Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function() {  
     Route::get('/', 'HomeController@index');
