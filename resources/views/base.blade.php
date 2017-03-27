@@ -10,21 +10,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
  <!-- Bootstrap Core CSS -->
 
-<link href="{{ URL::asset('/cpts/') }}css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<link href="{{ URL::asset('/cpts') }}/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="{{ URL::asset('/cpts') }}/css/style.css" rel='stylesheet' type='text/css' />
 <!-- Graph CSS -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="{{ URL::asset('/cpts') }}/css/font-awesome.css" rel="stylesheet"> 
 <!-- jQuery -->
 <!-- lined-icons -->
-<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<link rel="stylesheet" href="{{ URL::asset('/cpts') }}/css/icon-font.min.css" type='text/css' />
 <!-- //lined-icons -->
 <!-- chart -->
-<script src="js/Chart.js"></script>
+<script src="{{ URL::asset('/cpts') }}/js/Chart.js"></script>
 <!-- //chart -->
 <!--animate-->
-<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-<script src="js/wow.min.js"></script>
+<link href="{{ URL::asset('/cpts') }}/css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="{{ URL::asset('/cpts') }}/js/wow.min.js"></script>
 	<script>
 		 new WOW().init();
 	</script>
@@ -33,7 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.useso.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 <!---//webfonts---> 
  <!-- Meters graphs -->
-<script src="js/jquery-1.10.2.min.js"></script>
+<script src="{{ URL::asset('/cpts') }}/js/jquery-1.10.2.min.js"></script>
 <!-- Placed js at the end of the document so the pages load faster -->
 
 </head> 
@@ -696,9 +696,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <!-- main content end-->
    </section>
   
-<script src="js/jquery.nicescroll.js"></script>
-<script src="js/scripts.js"></script>
+<script src="{{ URL::asset('/cpts') }}/js/jquery.nicescroll.js"></script>
+<script src="{{ URL::asset('/cpts') }}/js/scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->
-   <script src="js/bootstrap.min.js"></script>
+   <script src="{{ URL::asset('/cpts') }}/js/bootstrap.min.js"></script>
 </body>
 </html>
