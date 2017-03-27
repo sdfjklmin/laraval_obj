@@ -23,7 +23,7 @@ class BaseController extends Controller
      */
     public function index()
     {
-        return view(base);
+        return view('base');
          // return view('home')->withArticles(\App\Article::all());
     }
 }
