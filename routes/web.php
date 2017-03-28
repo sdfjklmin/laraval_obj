@@ -23,14 +23,15 @@
 Auth::routes();
 /*默认页面*/
 Route::get('/', 'BaseController@index');
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'BaseController@index');
 /*对应模块组*/
 Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function() {  
     Route::get('/', 'HomeController@index');
     // Route::get('article', 'ArticleController@index');
     // Route::get('article/create', 'ArticleController@create');
-    Route::resource('article', 'ArticleController'); // 会自动增加基础的请求方法
-    Route::resource('index', 'IndexController'); // 会自动增加基础的请求方法
+    // 自动增加基础的请求方法
+    Route::resource('article', 'ArticleController'); // 文章管理
+    // Route::resource('index', 'IndexController');  
 });
 
 
