@@ -19,6 +19,6 @@ class BaseController extends Controller
   
     public function index()
     {
-        return view('base')->withMenus(Menu::all()) ;
+        return view('base')->withMenus(\Admin\Menu::all()) ;
     }
 }
