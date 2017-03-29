@@ -26,7 +26,6 @@ Route::get('/', 'BaseController@index');
 Route::get('/home', 'BaseController@index');
 /*对应模块组*/
 Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function() {  
-    Route::get('/', 'HomeController@index');
     // Route::get('article', 'ArticleController@index');
     // Route::get('article/create', 'ArticleController@create');
     // 自动增加基础的请求方法
