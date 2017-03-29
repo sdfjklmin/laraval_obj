@@ -9,6 +9,6 @@ class HomeController extends Controller
 {
     public function show()  
 	{
-	      return view('admin/article/create');
+	      return view('admin/home/create');
 	}
 }
