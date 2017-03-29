@@ -9,6 +9,6 @@ class HomeController extends Controller
 {
     public function show()  
 	{
-	    echo 'this is home index' ;
+	     return view('admin/article/index')->withArticles(Article::all());
 	}
 }
