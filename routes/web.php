@@ -31,7 +31,7 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
     // Route::get('article/create', 'ArticleController@create');
     // 自动增加基础的请求方法
     Route::resource('article', 'ArticleController'); // 文章管理
-    // Route::resource('index', 'IndexController');  
+    Route::resource('home', 'IndexController');  // 主页信息
 });
 
 

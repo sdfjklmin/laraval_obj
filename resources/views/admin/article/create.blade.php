@@ -13,7 +13,7 @@
                             {!! implode('<br>', $errors->all()) !!}
                         </div>
                     @endif
-                 
+                    
                     <form action="{{ url('admin/article') }}" method="POST">
                         {!! csrf_field() !!}
                         <input type="text" name="title" class="form-control" required="required" placeholder="请输入标题">
@@ -22,7 +22,7 @@
                         <br>
                         <button class="btn btn-lg btn-info">新增文章</button>
                     </form>
-
+                    <!-- 《战统:溟》-->
                 </div>
             </div>
         </div>
